@@ -1,24 +1,76 @@
-# README
+# Projet_bdd_model
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ce projet est une application Ruby on Rails permettant de gérer des films via une base de données relationnelle. Il s'agit d'un exemple pédagogique pour illustrer la création, la manipulation et l'affichage de données dans un contexte web.
 
-Things you may want to cover:
+## Prérequis
 
-* Ruby version
+- **Ruby** : version 3.0 ou supérieure recommandée
+- **Rails** : version 7 ou supérieure
+- **Bundler** : pour la gestion des gems
+- **SQLite3** (par défaut, ou adapter la configuration pour un autre SGBD)
 
-* System dependencies
+## Installation
 
-* Configuration
+1. Clonez le dépôt :
+   ```bash
+   git clone <url-du-repo>
+   cd Projet_bdd_model
+   ```
 
-* Database creation
+2. Installez les dépendances :
+   ```bash
+   bundle install
+   ```
 
-* Database initialization
+3. Créez et initialisez la base de données :
+   ```bash
+   rails db:create db:migrate db:seed
+   ```
 
-* How to run the test suite
+## Lancement de l'application
 
-* Services (job queues, cache servers, search engines, etc.)
+Démarrez le serveur Rails :
+```bash
+rails server
+```
+L'application sera accessible sur [http://localhost:3000](http://localhost:3000).
 
-* Deployment instructions
+## Structure du projet
 
-* ...
+- `app/models` : modèles ActiveRecord (ex : `movie.rb`)
+- `app/controllers` : contrôleurs Rails
+- `app/views` : vues HTML/ERB
+- `db/migrate` : migrations de la base de données
+- `config` : configuration de l'application
+
+## Tests
+
+Pour exécuter la suite de tests :
+```bash
+rails test
+```
+
+## Déploiement
+
+Pour déployer l'application, adaptez la configuration de la base de données et des variables d'environnement selon votre hébergeur (Heroku, Render, etc.).
+
+## Fonctionnalités
+
+- CRUD complet sur les films (`Movie`)
+- Interface web simple et responsive
+- Utilisation des conventions Rails
+
+## Contribution
+
+Les contributions sont les bienvenues ! Merci de forker le projet et de proposer une Pull Request.
+
+## Auteurs
+- [THIAM](https://github.com/thaliou)
+- [ASSY](https://github.com/AssyaJalo)
+- [SOUARE](https://github.com/bbkouty)
+- [FANAR](https://github.com/fanarbandia)
+- [MAIGA](https://github.com/Fadelion)
+
+## Licence
+
+Ce projet est sous licence MIT.
